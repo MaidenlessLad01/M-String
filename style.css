@@ -1,0 +1,81 @@
+body{
+    padding: 5px;
+    background-color: #52073C;
+}
+@font-face {
+    font-family: 'Lobster Two';
+    src: url(fonts/LobsterTwo-Regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+p{
+    font-family: 'Lobster Two',cursive;
+}
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E060B;
+    color: white;
+    position: sticky;
+    border-radius: 10px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.profile{
+    background: #4A0639;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position:relative;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    color: white;
+    height: 100%;
+}
+.content-area {
+    display: flex;
+    height: 86vh;
+}
+hr {
+    width: 200px;
+}
+.list{
+  background: #81005D;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 10px;
+  margin-left:10px;
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  width: 80%;
+  position: relative;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    background-color: #ddd;
+}
+.grid-item {
+    background-color: #8ca0ff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+   
