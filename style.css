@@ -55,6 +55,7 @@ hr {
     bottom: 0;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     left: 0;
     width: 100%; 
@@ -62,9 +63,14 @@ hr {
     padding: 10px;
     box-sizing: border-box;
   }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
   .lyrics-container{
-    width: 250px; /* Adjust as needed */
-    height: 620px; /* Adjust as needed */
+    width: 70%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background-color: #4A0639; /* Your panel background color */
     padding: 20px;
     position: relative;
@@ -80,7 +86,9 @@ hr {
   .lyrics::-webkit-scrollbar{
     width: 0px;
   }
-
+pre{
+    font-family: 'Tahoma',monospace;
+}
 .list{
   background: #81005D;
   border-radius: 10px;
@@ -104,6 +112,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Tahoma',monospace;
     border-radius: 15px;
     position:relative;
     box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
