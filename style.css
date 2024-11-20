@@ -54,6 +54,7 @@ hr {
     position: absolute;
     bottom: 0;
     display: flex;
+    
     justify-content: center;
     flex-direction: row;
     align-items: center;
@@ -66,6 +67,9 @@ hr {
   .buttons {
     display: flex;
     flex-direction: row;
+    
+    margin-left: 1%;
+    margin-right: 1%;
     align-items: center;
     }
   .lyrics-container{
@@ -138,5 +142,13 @@ pre{
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+}
+/* Change the mouse cursor to a pointer
+when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+cursor: pointer;
 }
    

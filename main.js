@@ -23,6 +23,7 @@ let updateTimer;
 let curr_track = document.createElement('audio');
 
 // Define the list of tracks that have to be played
+//switch switch kanta 
 let track_list = [
 {
 	name: "Can't Stop",
