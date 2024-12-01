@@ -22,6 +22,7 @@ p{
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: 10%;
 }
 .profile{
     background: #4A0639;
@@ -41,7 +42,8 @@ p{
 }
 .content-area {
     display: flex;
-    height: 86vh;
+    height: 93vh;
+   margin-left: 2%;
 }
 hr {
     width: 200px;
@@ -158,17 +160,6 @@ cursor: pointer;
     box-sizing: border-box;
   }
   
-  /* Body Styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-  }
-  
   /* Photocard Grid Container */
   .photocard-container {
     
@@ -176,7 +167,7 @@ cursor: pointer;
         
         gap: 20px;
         max-width: 1200px;
-        width: 82%;
+        width: 85%;
         padding: 20px;
         margin-top: 20px;
         height: 25%;
@@ -184,40 +175,40 @@ cursor: pointer;
   
   /* Individual Photocard Styling */
   .photocard {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 12px; /* Rounded corners */
     overflow: hidden; /* Ensure content doesn't spill out */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    width: 50%;;
   }
   
   .photocard:hover {
-    transform: translateY(-10px); /* Lift the card when hovered */
+    transform: translateY(-10px);
+    background-color: rgba(63, 1, 71, 0.6); /* Lift the card when hovered */
   }
   
   /* Image Inside Photocards */
   .photocard-img {
     width: 100%; /* Ensure image takes full width */
-    height: 200px; /* Set a fixed height for the image */
-    object-fit: cover; /* Make sure image covers the container without distortion */
+    height:80%; /* Set a fixed height for the image */
+    /* Make sure image covers the container without distortion */
   }
   
   /* Photocard Text Content */
   .photocard-info {
-    padding: 15px;
+    padding: 2px;
   }
   
   .photocard-title {
-    font-size: 20px;
+    font-size: 100%;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    color: #ffffff;
+   
   }
   
-  .photocard-description {
-    font-size: 16px;
-    color: #777;
-  }
+  
+  
   
   /* Responsive Design: Make the grid adapt to smaller screens */
   @media (max-width: 768px) {
