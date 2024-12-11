@@ -9,6 +9,7 @@
 		href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
+
 <header class="top-header">
         <p>M-String</p>
         <p>Logo</p>
@@ -22,160 +23,53 @@
         <hr>
     </div>
     <div class="list">
-        <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3d9DChrdc6BOeFsbrZ3Is0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+        <div class="artist-list">
+            <div class="artist-label">Artists</div>
+            <div class="artist-cards">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/neyo.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            </div>
+        </div>
+        <div class="album-list">
+            <div class="album-label">Albums</div>
+            <div class="album-cards">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            </div>
+        </div>
+        <div class="single-list">
+            <div class="single-label">Singles</div>
+            <div class="single-cards">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            <img src="img/brunomars.png" alt="Artist 1" class="photo-card">
+            </div>
+        </div>
     </div>
-    
+
     <div class="song-lyrics">
-        <h3>Title</h3>
+        <h3 class="track-name">Title</h3>
+        <h5 class="track-artist">-</h5>
         <div  class="lyrics-container">
-        <pre><div class="lyrics">
-Can't stop, addicted 
-to the shindig
-Chop Top, he says 
-I'm gonna win big
-Choose not a 
-life of imitation
-Distant cousin to 
-the reservation
-efunct, the pistol 
-that you pay for
-This punk, the feelin' 
-that you stay for
-In time, I want to be 
-your best friend
-East Side love is living 
-on the West End
-
-Knocked out, but boy, 
-you better come to            
-Don't die, you know, 
-the truth is some do
-Go write your message on 
-the pavement
-Burn so bright, I wonder 
-what the wave meant
-White heat is 
-screamin' in the jungle
-Complete the motion if you stumble
-Go ask the dust for any answers
-Come back strong with 
-50 belly dancers
-
-The world I love, the tears I drop
-To be part of the wave, can't stop
-Ever wonder if it's all for you?
-The world I love, the trains I hop
-To be part of the wave, can't stop
-Come and tell me when it's time to
-
-Sweetheart is bleeding 
-in the snow cone
-So smart, she's 
-leading me to ozone
-Music, the great 
-communicator
-Use two sticks to 
-make it in the nature
-I'll get you into penetration
-The gender of a generation
-The birth of every other nation
-Worth your weight, 
-the gold of meditation
-
-This chapter's gonna 
-be a close one
-Smoke rings, I know 
-you're gonna blow one
-All on a spaceship, 
-persevering
-Use my hands for 
-everything but steering
-Can't stop the spirits 
-when they need you
-Mop tops are happy 
-when they feed you
-J. Butterfly is in 
-the treetop
-Birds that blow 
-the meaning into bebop
-
-The world I love, 
-the tears I drop
-To be part of the wave, 
-can't stop
-Ever wonder if 
-it's all for you?
-The world I love, 
-the trains I hop
-To be part of the wave,
-can't stop
-Come and tell me 
-when it's time to
-
-Wait a minute, I'm 
-passin' out, win or lose
-Just like you
-Far more shocking 
-than anything I ever knew
-How about you?
-Ten more reasons 
-why I need somebody new
-Just like you
-Far more shocking 
-than anything I ever knew
-Right on cue
-
-Can't stop, addicted 
-to the shindig
-Chop Top, he says 
-I'm gonna win big
-Choose not a life of imitation
-Distant cousin 
-to the reservation
-Defunct, the pistol 
-that you pay for
-This punk, the feelin' 
-that you stay for
-In time, I want to 
-be your best friend
-East Side love is 
-living on the West End
-
-Knocked out, but boy, 
-you better come to
-Don't die, you know, 
-the truth is some do
-Go write your message 
-on the pavement
-Burn so bright, I 
-wonder what the wave meant
-
-Kick-start the
-golden generator
-Sweet talk but
-don't intimidate her
-Can't stop the
-gods from engineering
-Feel no need for
-any interfering
-Your image in
-the dictionary
-This life is more
-than ordinary
-Can I get two, maybe 
-even three of these?
-Comin' from space to
-teach you of the Pleiades
-
-Can't stop the spirits 
-when they need you
-This life is more than
-just a read-through   
-      
-            </div></pre>
+        <pre><div class="lyrics"></div></pre>
         </div>
         <div class="audio-interface">
+            <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+                value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+            </div>
             <div class="buttons">
+                <!-- Define the section for displaying the seek slider-->
                 <div class="prev-track" onclick="prevTrack()">
                     <i class="fa fa-step-backward fa-2x"></i>
                 </div>
@@ -186,13 +80,10 @@ just a read-through
                     <i class="fa fa-step-forward fa-2x"></i>
                 </div>
                 </div>
-        
         </div>
     </div>
     </div> 
-    
-
-<script src="main.js"></script>
+<script src="MainJS.js"></script>
 </body>
 
 </html>
