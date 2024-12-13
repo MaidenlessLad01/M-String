@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
     let artist = JSON.parse(localStorage.getItem('artist'))
+    let album = JSON.parse(localStorage.getItem('album'))
     //console.log(artist)
     document.getElementById('image').setAttribute('src',artist.image)
     document.getElementById('name').textContent=artist.name
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         BrunoMars: [
             {
                 songname: 'Die With A Smile',
-                songduration: '4:11'
+                songduration: '4:13'
             },
             {
                 songname: 'APT.',
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             },
             {
                 songname: 'Locked Out Of Heaven',
-                songduration: '3:53'
+                songduration: '3:55'
             },
             {
                 songname: 'Just The Way You Are',
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             },
             {
                 songname: `That's What I Like`,
-                songduration: '3:26'
+                songduration: '3:31'
             }
         ],
     
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             },
             {
                 songname: `Say It Ain't So`,
-                songduration: '4:18'
+                songduration: '4:19'
             },
             {
                 songname: 'Undone - The Sweater Song',
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             },
             {
                 songname: 'Beverly Hills',
-                songduration: '3:20'
+                songduration: '3:17[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]y=6y7777777777777777777777777777'
             }
         ],
     
@@ -119,6 +120,122 @@ document.addEventListener('DOMContentLoaded',()=>{
         ]
     };
 
+
+    let album_tracks = {
+        DooWopsAndHooligans: [
+            {
+                songname: 'Grenade',
+                songduration: '3:42'
+            },
+            {
+                songname: 'Just The Way You Are',
+                songduration: '3:40'
+            },
+            {
+                songname: 'Runaway Baby',
+                songduration: '2:28'
+            },
+            {
+                songname: 'The Lazy Song',
+                songduration: '3:09'
+            },
+            {
+                songname: `Marry You`,
+                songduration: '3:50'
+            }
+        ],
+    
+        Weezers: [
+            {
+                songname: 'Buddy Holly',
+                songduration: '2:39'
+            },
+            {
+                songname: `Say It Ain't So`,
+                songduration: '4:18'
+            },
+            {
+                songname: 'Undone - The Sweater Song',
+                songduration: '5:05'
+            },
+            {
+                songname: 'My Name Is Jonas',
+                songduration: '3:24'
+            },
+            {
+                songname: 'No One Else',
+                songduration: '3:04'
+            }
+        ],
+    
+        Lover: [
+            {
+                songname: 'Lover',
+                songduration: '3:41'
+            },
+            {
+                songname: `Cruel Summer`,
+                songduration: '2:58'
+            },
+            {
+                songname: 'The Archer',
+                songduration: '3:31'
+            },
+            {
+                songname: 'Paper Rings',
+                songduration: '3:42'
+            },
+            {
+                songname: 'Afterglow',
+                songduration: '3:43'
+            }
+        ],
+        Mutter: [
+            {
+                songname: 'Feuer Frei!',
+                songduration: '4:14'
+            },
+            {
+                songname: `Sonne`,
+                songduration: '4:34'
+            },
+            {
+                songname: 'Mein Hertz Brennt',
+                songduration: '4:39'
+            },
+            {
+                songname: 'Mutter',
+                songduration: '4:28'
+            },
+            {
+                songname: 'Ich Will',
+                songduration: '3:37'
+            }
+        ],
+        ByTheWay: [
+            {
+                songname: 'By The Way',
+                songduration: '3:36'
+            },
+            {
+                songname: `Can't Stop`,
+                songduration: '4:29'
+            },
+            {
+                songname: 'Dosed',
+                songduration: '5:11'
+            },
+            {
+                songname: 'The Zephyr Song',
+                songduration: '3:51'
+            },
+            {
+                songname: `Don't Forget Me`,
+                songduration: '4:37'
+            }
+        ]
+    };
+
     const track_list = document.getElementById('content-track')
     
     let skibidi = artist_songs[artist.name.replaceAll(" ","").replaceAll("-","") ]
@@ -130,5 +247,15 @@ document.addEventListener('DOMContentLoaded',()=>{
         <span class="track-duration">${skibidi[i].songduration}</span>
 </div>`
     }
+
+    let sigma = album_tracks[album.name.replaceAll(" ","").replaceAll("-","")]
+    for(let i in sigma)
+        {
+            track_list.innerHTML +=  `<div class="track">
+            <span class="track-number">${parseInt(i)+ 1}</span>
+            <span class="track-title">${sigma[i].songname}</span>
+            <span class="track-duration">${sigma[i].songduration}</span>
+    </div>`
+        }
 })
 

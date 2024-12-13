@@ -8,6 +8,8 @@ Array.from(picclick).forEach(a => {
         let name = a.dataset.name;
         localStorage.setItem('artist',JSON.stringify({image:img,name:name}));
         window.location.href="MiddlePage.html"
+
+        localStorage.setItem('album',JSON.stringify({image:img, name:name}));
     })
 })
 
@@ -182,67 +184,6 @@ just a read-through</div></pre>`,
         path: "songs/cantstop.mp3"
     },
     {
-        name: "Blue",
-        artist: "Yung Kai",
-        lyrics: `<pre><div class="lyrics">Your morning eyes,
-I could stare like
-watching stars
-I could walk you by,
-and I'll tell
-without a thought
-You'd be mine,
-would you mind if
-I took your hand
-tonight?
-Know you're all
-that I want this life
-
-I'll imagine we
-fell in love
-I'll nap under
-moonlight skies
-with you
-I think I'll
-picture us,
-you with the waves
-The ocean's
-colors on your face
-I'll leave my
-heart with your air
-So let me fly with you
-Will you be
-forever with me?
-
-My love will always
-stay by you
-I'll keep it safe,
-so don't you worry
-a thing, I'll tell
-you I love you more
-It's stuck with you
-forever, so promise
-you won't let it go
-I'll trust the 
-universe will
-always bring me to you
-
-I'll imagine we
-fell in love
-I'll nap under
-moonlight skies with you
-I think I'll picture us,
-you with the waves
-The ocean's colors
-on your face
-I'll leave my heart
-with your air
-So let me 
-fly with you
-Will you be
-forever with me?</div></pre>`,
-        path: "songs/blue.mp3"
-    },
-    {
         name: "Buddy Holly",
         artist: "Weezer",
         lyrics: `<pre><div class="lyrics">What's with these
@@ -321,6 +262,309 @@ I don't care about that
 I don't care about that
 I don't care about that</div></pre>`,
         path: "songs/buddyholly.mp3"
+    },  
+    {
+        name: "Blue",
+        artist: "Yung Kai",
+        lyrics: `<pre><div class="lyrics">Your morning eyes,
+I could stare like
+watching stars
+I could walk you by,
+and I'll tell
+without a thought
+You'd be mine,
+would you mind if
+I took your hand
+tonight?
+Know you're all
+that I want this life
+
+I'll imagine we
+fell in love
+I'll nap under
+moonlight skies
+with you
+I think I'll
+picture us,
+you with the waves
+The ocean's
+colors on your face
+I'll leave my
+heart with your air
+So let me fly with you
+Will you be
+forever with me?
+
+My love will always
+stay by you
+I'll keep it safe,
+so don't you worry
+a thing, I'll tell
+you I love you more
+It's stuck with you
+forever, so promise
+you won't let it go
+I'll trust the 
+universe will
+always bring me to you
+
+I'll imagine we
+fell in love
+I'll nap under
+moonlight skies with you
+I think I'll picture us,
+you with the waves
+The ocean's colors
+on your face
+I'll leave my heart
+with your air
+So let me 
+fly with you
+Will you be
+forever with me?</div></pre>`,
+        path: "songs/blue.mp3"
+    },
+    {
+        name: "So Sick",
+        artist: "Ne-Yo",
+        lyrics:`<pre><div class="lyrics">
+Mm, mm, yeah
+Do, do, do, do, do, do, do-do
+Ooh, yeah
+
+Gotta change my answering machine
+Now that I'm alone
+'Cause right now it says that we
+Can't come to the phone
+And I know it makes no sense
+'Cause you walked out the door
+But it's the only way I hear your voice anymore
+
+(It's ridiculous)
+It's been months
+And for some reason I just (Can't get over us)
+And I'm stronger than this, yeah (Enough is enough)
+No more walking 'round with my head down (Yeah)
+I'm so over being blue
+Cryin' over you
+
+And I'm so sick of love songs, so tired of tears
+So done with wishin' you were still here
+Said I'm so sick of love songs, so sad and slow
+So why can't I turn off the radio?
+
+Gotta fix that calendar I have
+That's marked July 15th
+Because since there's no more you
+There's no more anniversary
+I'm so fed up with my thoughts of you
+And your memory
+And how every song reminds me of what used to be
+That's the reason
+
+I'm so sick of love songs, so tired of tears
+So done with wishin' you were still here
+Said I'm so sick of love songs, so sad and slow
+So why can't I turn off the radio?
+
+(Oh, leave me alone) Leave me alone
+(Stupid love songs) Oh-oh, hey
+Don't make me think about her smile
+Or having my first child
+I'm letting go
+Turning off the radio
+
+'Cause I'm so sick of love songs (Hey), so tired of tears (So tired of tears)
+So done with wishin' she were still here (Oh)
+Said I'm so sick of love songs, so sad and slow (Ooh, oh)
+So why can't I turn off the radio? (Why can't I turn off the radio?)
+And I'm so sick of love songs, so tired of tears (So tired of tears)
+So done with wishing she were still here
+Said I'm so sick of love songs, so sad and slow (Hey)
+Why can't I turn off the radio? (Why can't I turn off the radio?)
+And I'm so sick of love songs (So sick of love songs)
+So tired of tears (And I'm so sick, so sick of love song)
+So done with wishing you were still here
+(And I'm so sick, so sick of love songs)
+Said I'm so sick of love songs, so sad and slow (Hey)
+So why can't I turn off the radio?
+
+Why can't I turn off the radio?
+Why can't I turn off the radio?
+        </div></pre>`,
+        path: "songs/sosick.mp3"
+    },
+    {
+        name: "Hit 'Em Up",
+        artist: "2Pac",
+        lyrics:`<pre><div class="lyrics">
+I ain't got no motherfucking friends
+That's why I fucked your bitch, you fat motherfucker
+Take Money
+West Side, Bad Boy killers
+Take Money
+You know who the realest is
+We bring it too
+Take money, take money
+
+[2Pac:]
+First off, fuck your bitch and the clique you claim
+Westside when we ride, come equipped with game
+You claim to be a player, but I fucked your wife
+We bust on Bad Boys, niggas fucked for life
+Plus Puffy trying to see me, weak hearts I rip
+Biggie Smalls and Junior M.A.F.I.A. some mark-ass bitches
+We keep on coming while we running for your jewels
+Steady gunning, keep on busting at them fools
+You know the rules
+Lil' Caesar go ask your homie how I'll leave you
+Cut your young ass up, leave you in pieces, now be deceased
+Little Kim, don't fuck around with real G's
+Quick to snatch your ugly ass off the streets
+So fuck peace! I'll let them niggas know it's on for life
+Don't let the Westside ride the night haha
+Bad Boy murdered on wax and killed
+Fuck with me and get your caps peeled
+You know
+
+[2Pac:]
+See, grab your Glocks when you see 2Pac
+Call the cops when you see 2Pac, oh
+Who shot me, but your punks didn't finish
+Now you about to feel the wrath of a menace
+Nigga, I hit 'em up
+
+[2Pac:]
+Check this out, you motherfuckers know what time it is
+I don't know why I'm even on this track
+Y'all niggas ain't even on my level
+I'm going to let my little homies ride on you bitch-made ass Bad Boy bitches
+Take money
+
+[Hussein Fatal:]
+Get out the way, yo, get out the way, yo
+Biggie Smalls just got dropped
+Little Moo' pass the MAC and let me hit him in his back
+Frank White needs to get spanked right for setting traps
+Little accident-murderer, and I ain't never heard of ya
+Poisonous gats attack when I'm serving ya
+Spank you, shank your whole style when I gank
+Guard your rank cause I'ma slam your ass in the paint
+Puffy weaker than the fuckin' block I'm running through, nigga
+And I'm smoking Junior M.A.F.I.A. in front of you, nigga
+With the ready-power
+Tucked in my Guess under my Eddie Bauer
+Your clout petty/sour, I push packages every hour
+I hit 'em up
+
+[2Pac:]
+Grab your Glocks when you see 2Pac
+Call the cops when you see 2Pac, oh
+Who shot me, but your punks didn't finish
+Now you about to feel the wrath of a menace
+Nigga, I hit 'em up
+
+[2Pac:]
+Peep how we do it, keep it real as penitentiary steel
+This ain't no freestyle battle
+All you niggas getting killed with your mouths open
+Trying to come up off of me, you in the clouds hoping
+Smoking dope, it's like a sherm high
+Niggas think they learned to fly
+But they burn, motherfucker, you deserve to die
+Talking about you getting money, but it's funny to me
+All you niggas living bummy – why you fucking with me?
+I'm a self-made millionaire
+Thug livin', out of prison, pistols in the air haha
+Biggie, remember when I used to let you sleep on the couch
+And beg a bitch to let you sleep in the house?
+Now it's all about Versace, you copied my style
+Five shots couldn't drop me, I took it and smiled
+Now I'm back to set the record straight
+With my AK, I'm still the thug that you love to hate
+Motherfucker, I'll hit 'em up
+
+[Kadafi:]
+I'm from N-E-W Jers' where plenty of murders occurs
+No points or commas, we bring drama to all you herbs
+Now go check the scenario: Lil' Cease
+I'll bring you fake G's to your knees
+Copping pleas in de Janeiro
+Little Kim, is you coked up or doped up?
+Get your little Junior Whopper click smoked up
+What the fuck, is you stupid?
+I take money, crash and mash through Brooklyn
+With my click looting, shooting and polluting your block
+With a 15-shot cocked Glock to your knot
+Outlaw Mafia clique moving up another notch
+And your Pop stars popped and get mopped and dropped
+And all your fake ass east coast props
+Brainstormed and locked
+
+[E.D.I. Mean:]
+Jui-cer
+You's a beat biter, a Pac style taker
+I'll tell you to your face you ain't shit but a faker
+Softer than Alize with a chaser
+About to get murdered for the paper
+E.D.I. Mean approach the scene of the caper
+Like a loc with Little Ceas' in a choke
+Gun totin' smoke. We ain't no motherfucking joke
+Thug Life, niggas better be known
+Be approaching in the wide open, gun smoking
+No need for hoping, it's a battle lost
+I got 'em crossed as soon as the funk is bopping off
+Nigga, I hit 'em up!
+
+[2Pac:]
+Now you tell me who won
+I see them, they run haha
+They don't wanna see us
+Take money
+Whole Junior M.A.F.I.A. clique dressing up trying to be us
+Take money
+How the fuck they gonna be the mob when we always on our job? We millionaires
+Killing ain't fair, but somebody got to do it
+Oh yeah, Mobb Deep: you wanna fuck with us?
+You little young-ass motherfuckers
+Don't one of you niggas got sickle-cell or something?
+You're fucking with me, nigga
+You fuck around and catch a seizure or a heart attack
+You better back the fuck up
+Before you get smacked the fuck up
+This is how we do it on our side
+Any of you niggas from New York that want to bring it:
+Bring it!
+But we ain't singing, we bringing drama
+Fuck you and your motherfucking mama
+We gon' kill all you motherfuckers
+Now when I came out, I told you it was just about Biggie
+Then everybody had to open their mouth with a mother fucking opinion
+Well, this is how we gonna do this:
+Fuck Mobb Deep, fuck Biggie, fuck Bad Boy as a staff, record label and as a motherfucking crew!
+And if you want to be down with Bad Boy, then fuck you too!
+Chino XL: fuck you too!
+All you motherfuckers, fuck you too!
+(Take money, take money)
+All of y'all motherfuckers, fuck you; die slow, motherfucker
+My .44 make sure all y'all kids don't grow!
+You motherfuckers can't be us or see us
+We motherfuckin' Thug Life-riders, Westside til we die!
+Out here in California, nigga, we warned ya
+We'll bomb on you motherfucker! We do our job!
+You think you mob? Nigga, we the motherfuckin' mob
+Ain't nothing but killers and the real niggas
+All you motherfuckers feel us
+Our shit goes triple and 4-quadruple
+Take money
+You niggas laugh cause our staff got guns under they motherfuckin' belts
+You know how it is, when we drop records they felt
+You niggas can't feel it, we the realest
+Fuck 'em, we Bad Boy-killers
+We killers, we killers, we killers
+
+        </div></pre>`,
+        path: "songs/hitemup.mp3"
     },
     ];
 
@@ -439,6 +683,120 @@ let artist_songs = {
     ]
 };
 
+let album_tracks = {
+    DooWopsHooligans: [
+        {
+            songname: 'Grenade',
+            songduration: '3:42'
+        },
+        {
+            songname: 'Just The Way You Are',
+            songduration: '3:40'
+        },
+        {
+            songname: 'Runaway Baby',
+            songduration: '2:28'
+        },
+        {
+            songname: 'The Lazy Song',
+            songduration: '3:09'
+        },
+        {
+            songname: `Marry You`,
+            songduration: '3:50'
+        }
+    ],
+
+    Weezer: [
+        {
+            songname: 'Buddy Holly',
+            songduration: '2:39'
+        },
+        {
+            songname: `Say It Ain't So`,
+            songduration: '4:18'
+        },
+        {
+            songname: 'Undone - The Sweater Song',
+            songduration: '5:05'
+        },
+        {
+            songname: 'My Name Is Jonas',
+            songduration: '3:24'
+        },
+        {
+            songname: 'No One Else',
+            songduration: '3:04'
+        }
+    ],
+
+    Lover: [
+        {
+            songname: 'Lover',
+            songduration: '3:41'
+        },
+        {
+            songname: `Cruel Summer`,
+            songduration: '2:58'
+        },
+        {
+            songname: 'The Archer',
+            songduration: '3:31'
+        },
+        {
+            songname: 'Paper Rings',
+            songduration: '3:42'
+        },
+        {
+            songname: 'Afterglow',
+            songduration: '3:43'
+        }
+    ],
+    Mutter: [
+        {
+            songname: 'Feuer Frei!',
+            songduration: '4:14'
+        },
+        {
+            songname: `Sonne`,
+            songduration: '4:34'
+        },
+        {
+            songname: 'Mein Hertz Brennt',
+            songduration: '4:39'
+        },
+        {
+            songname: 'Mutter',
+            songduration: '4:28'
+        },
+        {
+            songname: 'Ich Will',
+            songduration: '3:37'
+        }
+    ],
+    ByTheWay: [
+        {
+            songname: 'By The Way',
+            songduration: '3:36'
+        },
+        {
+            songname: `Can't Stop`,
+            songduration: '4:29'
+        },
+        {
+            songname: 'Dosed',
+            songduration: '5:11'
+        },
+        {
+            songname: 'The Zephyr Song',
+            songduration: '3:51'
+        },
+        {
+            songname: `Don't Forget Me`,
+            songduration: '4:37'
+        }
+    ]
+};
 
 let singles = document.getElementsByClassName('singles')
 
