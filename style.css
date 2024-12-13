@@ -1,17 +1,20 @@
-body{
+body {
     padding: 5px;
     background-color: #52073C;
 }
+
 @font-face {
     font-family: 'Lobster Two';
     src: url(fonts/LobsterTwo-Regular.ttf) format('truetype');
-    font-weight:normal;
-    font-style:normal;
+    font-weight: normal;
+    font-style: normal;
 }
-p{
-    font-family: 'Lobster Two',cursive;
+
+p {
+    font-family: 'Lobster Two', cursive;
 }
-.top-header{
+
+.top-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,7 +26,8 @@ p{
     width: 100%;
     z-index: 1000;
 }
-.profile{
+
+.profile {
     background: #4A0639;
     margin-right: 10px;
     margin-top: 10px;
@@ -33,283 +37,286 @@ p{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    position:relative;
-    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 15%;
     color: white;
     height: 100%;
 }
+
 .content-area {
     display: flex;
     height: 86vh;
 }
+
 hr {
     width: 200px;
 }
-.song{
-    bottom: 0;
-    margin-top: 20px;
-}
+
 .audio-interface {
-    grid-row: 4;
-    bottom: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    left: 0;
-    width: 100%; 
-    background-color: #4A0639; 
-    padding: 0%;
-    box-sizing: border-box;
-  }
-  .buttons {
+    width: 100%;
+    background-color: #4A0639;
+}
+
+.buttons {
     display: flex;
     flex-direction: row;
-    margin-left: 1%;
     width: 100%;
-    padding: 0px;
-    margin-right: 1%;
     align-items: center;
-    }
-  .lyrics-container{
-    grid-row: 3;
-    width: 70%; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
-    background-color: #4A0639; /* Your panel background color */
+}
+
+.lyrics-container {
+    width: 70%;
+    height: 100%;
+    background-color: #4A0639;
     position: relative;
-    overflow-y: auto; 
-  }
-  .lyrics{
+    overflow-y: auto;
+}
+
+.lyrics {
     background-color: #4A0639;
     max-height: 620px;
     text-align: left;
     color: white;
     word-wrap: break-word;
-  }
-  .lyrics-container::-webkit-scrollbar{
-    width: 0px;
-  }
-pre{
-    font-family: 'Tahoma',monospace;
-}
-.list{
-  background: #81005D;
-  border-radius: 10px;
-  opacity: 1;
-  margin-right: 10px;
-  padding: 10px;
-  margin-left:10px;
-  margin-top: 10px;
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  width: 60%;
-  position: relative;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.artist-list {
-    grid-row: 1;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    width: 100%;
-    align-content: center;
-}
-.album-list {
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    width: 100%;
-    align-content: center;
-}
-.single-list {
-    grid-row: 3;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    width: 100%;
-    align-content: center;
-    
-}
-.artist-cards,.album-cards,.single-cards{
-    width: 100%; /* Adjust the size as needed */
-    border-radius: 10px;
-    grid-row: 2;
-    display: flex;
-    grid-gap: 10px;
-    justify-content: center;
-    flex-direction: row;
-    background-color: transparent;
-    border-radius: 12px; /* Rounded corners */
-    overflow: hidden; /* Ensure content doesn't spill out */
-    transition: transform 0.3s ease-in-out;
 }
 
-.artist-label,.single-label,.album-label {
-    grid-row: 1;
+.lyrics-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+pre {
+    font-family: 'Tahoma', monospace;
+}
+
+.list {
+    background: #81005D;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+    gap: 3%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 100%;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.artist-list,
+.album-list,
+.single-list {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+}
+
+.artist-cards,
+.album-cards,
+.single-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.artist-info,
+.album-info,
+.single-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+
+.artist-label,
+.album-label,
+.single-label {
     font-size: 25px;
     font-weight: bold;
     color: white;
     text-align: left;
-    align-content: center;
+    font-family: 'Lobster Two', cursive;
 }
+
 .photo-card {
-    width: 100%; /* Adjust the size as needed */
-    max-width: 150px; /* Max width for uniform image size */
+    width: 100%;
+    max-width: 100px;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-    border-radius: 12px; /* Rounded corners */
-    overflow: hidden; /* Ensure content doesn't spill out */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.photocard-container {
-    display: flex;
-    gap: 20px;
-    max-width: 1200px;
-    width: 85%;
-    padding: 20px;
-    margin-top: 20px;
-    height: 25%;
-}
 .photo-card:hover {
-    transform: translateY(-10px);
-    background-color: rgba(63, 1, 71, 0.6); /* Lift the card when hovered */
-  }
-.song-lyrics{
+   
+    background-color: rgba(63, 1, 71, 0.6);
+}
+
+.song-lyrics {
     background: #4A0639;
     margin-left: 10px;
     margin-top: 10px;
     padding: 10px;
     display: flex;
-    grid-template-rows: auto auto 1fr auto; /* Three rows: title, lyrics, audio interface */
-    grid-gap: 10px; /* Add spacing between elements */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Tahoma',monospace;
+    font-family: 'Tahoma', monospace;
     border-radius: 15px;
-    position:relative;
-    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 20%;
     color: white;
     height: 100%;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    background-color: #ddd;
-}
-.grid-item {
-    background-color: #8ca0ff;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 20px;
-}
+
 .profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
 }
-/* Change the mouse cursor to a pointer
-when hovered over */
-i.fa-play-circle,
-i.fa-pause-circle,
-i.fa-step-forward,
-i.fa-step-backward {
-cursor: pointer;
-}
+
 .track-name {
-    grid-row: 1;
     text-align: center;
     font-size: 24px;
-    margin-bottom: 0%;
-    }
-    .track-artist{
-        grid-row:2;
-        text-align: center;
-        margin: 0%;
-    }
+}
+
+.track-artist {
+    text-align: center;
+}
+
 .playpause-track,
 .prev-track,
 .next-track {
-padding: 25px;
-opacity: 0.8;
-
-/* Smoothly transition the opacity */
-transition: opacity .2s;
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
 }
 
-/* Change the opacity when mouse is hovered */
 .playpause-track:hover,
 .prev-track:hover,
 .next-track:hover {
-opacity: 1.0;
+    opacity: 1.0;
 }
 
-/* Define the slider width so that it scales properly */
 .slider_container {
-width: 90%;
-max-width: 400px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Modify the appearance of the slider */
-.seek_slider, .volume_slider {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-height: 5px;
-background: black;
-opacity: 0.7;
--webkit-transition: .2s;
-transition: opacity .2s;
+.seek_slider {
+    width: 60%;
 }
 
- /* Modify the appearance of the slider thumb */
- .seek_slider::-webkit-slider-thumb,
- .volume_slider::-webkit-slider-thumb {
- -webkit-appearance: none;
- -moz-appearance: none;
- appearance: none;
- width: 15px;
- height: 15px;
- background: white;
- cursor: pointer;
- border-radius: 50%;
- }
+.current-time,
+.total-duration {
+    padding: 10px;
+}
 
- /* Change the opacity when mouse is hovered */
- .seek_slider:hover,
- .volume_slider:hover {
- opacity: 1.0;
- }
- 
- .seek_slider {
- width: 60%;
- }
- 
- .volume_slider {
- width: 30%;
- }
- 
- .current-time,
- .total-duration {
- padding: 10px;
- }
- 
- i.fa-volume-down,
- i.fa-volume-up {
- padding: 10px;
- }
+.seek_slider {
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.seek_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.content-info{
+    background: #c544a0;
+    border-radius: 10px;
+    margin: 0px;
+    height: 100%;
+    grid-row: 1;
+    width: 100%;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.content-image{
+    object-fit: scale-down;
+    width: 25%;
+    height: 70%;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.content-title{
+    margin-left: 20px;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+.content-track{
+    background: #81005D;
+    border-radius: 10px;
+    margin: 0px;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each track */
+    font-family: 'Lobster Two', cursive;
+}
+.track{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background: #81005D;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.track:hover {
+    background-color: #700044;
+}
+
+.track-number {
+    width: 10%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.track-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    width: 40%;
+    margin-left: 10px;
+    text-align: start;
+}
+.track-duration {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    text-align: end;
+}

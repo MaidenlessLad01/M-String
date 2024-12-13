@@ -10,7 +10,6 @@ let next_btn = document.querySelector(".next-track");
 let prev_btn = document.querySelector(".prev-track");
 
 let seek_slider = document.querySelector(".seek_slider");
-let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 
@@ -143,15 +142,15 @@ function loadTrack(track_index) {
         playTrack();
         }
         function seekTo() {
-            // Calculate the seek position by the
-            // percentage of the seek slider 
-            // and get the relative duration to the track
-            seekto = curr_track.duration * (seek_slider.value / 100);
-            
-            // Set the current track position to the calculated seek position
-            curr_track.currentTime = seekto;
-            }
-            
+        // Calculate the seek position by the
+        // percentage of the seek slider 
+        // and get the relative duration to the track
+        seekto = curr_track.duration * (seek_slider.value / 100);
+        
+        // Set the current track position to the calculated seek position
+        curr_track.currentTime = seekto;
+        }
+        
             function setVolume() {
             // Set the volume according to the
             // percentage of the volume slider set
