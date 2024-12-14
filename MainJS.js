@@ -4215,6 +4215,15 @@ More will be revealed, my friend
 // };
 
 let singles = document.getElementsByClassName('singles')
+Array.from(singles).forEach(b => {
+    b.addEventListener('click',()=>{
+        let track_name = b.getAttribute('alt')
+        let track = track_list.findIndex(x => x.name == track_name)
+        loadTrack(track)
+        playTrack()
+    })
+}) 
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const tracks = document.getElementsByClassName('track');
